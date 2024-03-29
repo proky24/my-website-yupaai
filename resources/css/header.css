@@ -1,0 +1,59 @@
+
+.logo{
+    width: 45px;
+    margin: 0;
+    padding: 0;
+}
+
+.container-header{
+    display: flex;
+    height: 10vh;
+}
+
+.left{
+   align-items: right;
+}
+
+.col1-header{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col2-header{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #131d27;
+}
+
+.troll{
+    width: 50%;
+    height: 100%;
+    border-right: 3px solid black;
+}
+
+.projects{
+    width: 50%;
+    height: 100%;
+    background-color: #131d27;
+    text-align: center;
+    align-items: center;
+}
+
+.text-in-buttons{
+    font-family: 'Expletus Sans';
+    font-size: 35px;
+}
+
+.link-animation{
+    transition: scale 3s, rotate 1.5s;
+}
+
+.link-animation:hover{
+    scale: 1.2;
+    rotate: 360deg;
+}

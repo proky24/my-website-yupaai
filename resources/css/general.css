@@ -1,0 +1,26 @@
+*{
+    font-family: "Expletus Sans", sans-serif;
+    color: white;
+}
+
+:root{
+    --background: #0f151b;
+    --button: #131d27;
+}
+
+body{
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    background-color: var(--button);
+    border-style: none;
+    text-align: center;
+    cursor: pointer;
+}

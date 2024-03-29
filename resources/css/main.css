@@ -1,0 +1,158 @@
+main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container-main{
+    margin-top: 7vh;
+    flex: 1;
+}
+
+.addOpacity{
+    animation: fadeIn 5s forwards;
+}
+
+.col1-main,
+.col2-main,
+.col3-main{
+    text-align: center;
+}
+
+.col1-main{
+    margin-bottom: 0;
+}
+
+.col2-main{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.col3-main{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+.hey{
+}
+
+/*
+.addOpacity{
+    animation: fadeIn 2s forwards;
+}
+*/
+
+
+.name{
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/*
+.addOpacityName{
+    animation: fadeIn 4s forwards;
+}
+*/
+.cool{
+    text-decoration: underline;
+    animation: changeColor 10s infinite;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+.about{
+    margin-bottom: 5px;
+}
+/*
+.addOpacityAbout{
+    animation: fadeIn 10s forwards;
+}
+*/
+
+.studying{
+    font-size: 15px;
+    margin-top: 0px;
+}
+/*
+.addOpacityStudying{
+    animation: fadeIn 8s forwards;
+}
+*/
+.pic{
+    height: 50vh;
+    border-radius: 3%;
+}
+
+.addShadowColor{
+    animation: changeShadowColor 10s infinite;
+}
+
+/*
+.addOpacityPic{
+    animation: fadeIn 6s forwards, changeShadowColor 10s infinite;
+}
+*/
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.addSlideIn{
+    animation: slideIn 1.2s forwards;
+}
+
+.heading{
+    /*background-color: #131d27;*/
+    padding: 6px;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.text{
+    max-width: 800px;
+    line-height: 35px;
+    /*background-color: #131d27;*/
+    border-radius: 5px;
+    padding: 12px;
+}
+
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes changeShadowColor{
+    0% { box-shadow: 0 0 15px rgb(255, 0, 0); } 
+    16.666% { box-shadow: 0 0 15px rgb(255, 255, 0); } 
+    33.333% { box-shadow: 0 0 15px rgb(0, 255, 0); } 
+    50% { box-shadow: 0 0 15px rgb(0, 255, 255); } 
+    66.666% { box-shadow: 0 0 15px rgb(0, 0, 255); } 
+    83.333% { box-shadow: 0 0 15px rgb(255, 0, 255); } 
+    100% { box-shadow: 0 0 15px rgb(255, 0, 0); } 
+}
+
+@keyframes changeColor{
+    0% { color: rgb(255, 0, 0); } 
+    16.666% { color: rgb(255, 255, 0); } 
+    33.333% { color: rgb(0, 255, 0); } 
+    50% { color: rgb(0, 255, 255); } 
+    66.666% { color: rgb(0, 0, 255); } 
+    83.333% { color: rgb(255, 0, 255); } 
+    100% { color: rgb(255, 0, 0); } 
+}
+
+@keyframes slideIn{
+    0%{transform: translateX(-400px);}
+    100%{transform: translateX(0px);}
+}
