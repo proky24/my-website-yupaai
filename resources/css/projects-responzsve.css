@@ -1,6 +1,7 @@
 @media (min-width: 150px) and (max-width: 549px){
     .header{
         font-size: 25px;
+        height: 10svh;
     }
 
     .container{
@@ -36,6 +37,10 @@
         width: 40%; /* Increase the width for smaller screens */
         left: 30%; /* Adjust the left position for smaller screens */
         font-size: 16px; /* Decrease the font size for smaller screens */
+    }
+
+    .centered-div{
+        margin-top: 5svh;
     }
 }
 

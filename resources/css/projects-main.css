@@ -16,10 +16,10 @@
 img{
     width: 12rem;
     height: 12rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    border-radius: 1rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
     animation: changeBorderColor 10s infinite;
 }
 

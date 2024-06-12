@@ -3,6 +3,10 @@
         font-size: 15px;
     }
 
+    .container-header{
+        height: 10svh;
+    }
+
     .col1-header{
         width:75%;
     }
