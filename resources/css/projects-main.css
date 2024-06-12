@@ -48,8 +48,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 7vh;
-    margin-bottom: 5vh;
+    
 }
 
 .go-back-button {
@@ -61,12 +60,14 @@ img{
 
 .go-back-button a {
     text-decoration: underline;
-    
+    margin: 0;
 }
 
 
 .button{
     transition: scale 1s;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 
 .button:hover{
