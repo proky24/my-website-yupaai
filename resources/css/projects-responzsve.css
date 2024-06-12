@@ -1,0 +1,127 @@
+@media (min-width: 150px) and (max-width: 549px){
+    .header{
+        font-size: 25px;
+        height: 10svh;
+    }
+
+    .container{
+        gap: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-left: 1rem;
+    }
+
+    img{
+        width: 6rem;
+        height: 6rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        border-radius: 1rem;
+        animation: changeBorderColor 10s infinite;
+    }
+
+    .maybe{
+        height: 150px;
+        width: 150px;
+        border-radius: 15px;
+    }
+
+    .text-in-show{
+        font-size: 15px;
+    }
+
+    .go-back-button {
+        width: 40%; /* Increase the width for smaller screens */
+        left: 30%; /* Adjust the left position for smaller screens */
+        font-size: 16px; /* Decrease the font size for smaller screens */
+    }
+
+    .centered-div{
+        margin-top: 5svh;
+        margin-bottom: 5svh;
+    }
+
+    
+}
+
+@media (min-width: 550px) and (max-width: 999px){
+    .header{
+        font-size: 30px;
+    }
+
+    .container{
+        gap: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    img{
+        width: 8rem;
+        height: 8rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        border-radius: 1rem;
+        animation: changeBorderColor 10s infinite;
+    }
+
+    .maybe{
+        height: 200px;
+        width: 200px;
+        border-radius: 15px;
+    }
+
+    .text-in-show{
+        font-size: 16px;
+    }
+
+    .go-back-button {
+        width: 30%; /* Increase the width for smaller screens */
+        left: 35%; /* Adjust the left position for smaller screens */
+        font-size: 20px; /* Decrease the font size for smaller screens */
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1499px){
+    .header{
+        font-size: 35px;
+    }
+
+    .container{
+        gap: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+    }
+
+    img{
+        width: 10rem;
+        height: 10rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        border-radius: 1rem;
+        animation: changeBorderColor 10s infinite;
+    }
+
+    .maybe{
+        height: 220px;
+        width: 220px;
+        border-radius: 15px;
+    }
+
+    .text-in-show{
+        font-size: 20px;
+    }
+
+    .go-back-button {
+        width: 20%; /* Increase the width for smaller screens */
+        left: 40%; /* Adjust the left position for smaller screens */
+        font-size: 25px; /* Decrease the font size for smaller screens */
+    }
+}

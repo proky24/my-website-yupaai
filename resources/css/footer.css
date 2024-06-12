@@ -1,0 +1,12 @@
+footer{
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #131d27;
+}
+
+footer p{
+    margin: 0;
+}

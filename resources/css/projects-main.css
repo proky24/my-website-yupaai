@@ -1,0 +1,83 @@
+.addOpacity{
+    animation: fadeIn 5s forwards;
+}
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 12px;
+}
+
+img{
+    width: 12rem;
+    height: 12rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    animation: changeBorderColor 10s infinite;
+}
+
+.maybe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #131d27; 
+    animation: changeBorderColor 10s infinite;
+    border-radius: 15px;
+    height: 250px; 
+    width: 250px;
+    transition: scale 1s;
+}
+
+.maybe:hover{
+    scale: 1.1;
+}
+
+.text-in-show{
+    font-size: 16px;
+}
+
+.centered-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7vh;
+    margin-bottom: 5vh;
+}
+
+.go-back-button {
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.go-back-button a {
+    text-decoration: underline;
+    
+}
+
+
+.button{
+    transition: scale 1s;
+}
+
+.button:hover{
+    scale: 1.2;
+}
+
+@keyframes changeBorderColor {
+    0% { border: 2px solid rgba(142, 218, 232, 0.5); } /* Light Cyan: #8EDA */
+    20% { border: 2px solid rgba(78, 186, 204, 0.5); } /* Cyan */
+    40% { border: 2px solid rgba(47, 147, 166, 0.5); } /* Cyan */
+    60% { border: 2px solid rgba(24, 94, 104, 0.5); } /* Dark Cyan */
+    80% { border: 2px solid rgba(47, 147, 166, 0.5); } /* Cyan */
+    100% { border: 2px solid rgba(142, 218, 232, 0.5); } /* Light Cyan */
+}

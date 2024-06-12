@@ -1,0 +1,71 @@
+@media (min-width: 150px) and (max-width: 549px) {
+    .text-in-buttons{
+        font-size: 15px;
+    }
+
+    .container-header{
+        height: 10svh;
+    }
+
+    .col1-header{
+        width:75%;
+    }
+
+    .col2-header{
+        width: 25%;
+        gap: 5px;
+    }
+
+    .col3-main{
+        padding: 12px;
+    }
+
+    .logo{
+        width: 20px;
+    }
+
+
+    .heading{
+        width: 30vw;
+        padding: 12px;
+    }
+
+    .text{
+        max-width: 300px;
+    }
+
+}
+
+@media (min-width: 550px) and (max-width: 999px) {
+    .text-in-buttons{
+        font-size: 25px;
+    }
+
+    .col1-header{
+        width: 75%;
+    }
+
+    .col2-header{
+        width: 25%;
+        gap: 10px;
+    }
+
+    .logo{
+        width: 40px;
+    }
+
+    .heading{
+        width: 30vw;
+        padding: 12px;
+    }
+
+    .text{
+        max-width: 600px;
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+
+    .projects{
+        padding-right: 4px;
+    }
+}
