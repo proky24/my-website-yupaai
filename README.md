@@ -1,3 +1,3 @@
 pretty proud of this one 
 --------------------------------------------
-[(https://proky.vercel.app)]
+https://proky.vercel.app
