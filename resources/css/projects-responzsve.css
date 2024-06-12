@@ -41,7 +41,10 @@
 
     .centered-div{
         margin-top: 5svh;
+        margin-bottom: 5svh;
     }
+
+    
 }
 
 @media (min-width: 550px) and (max-width: 999px){
