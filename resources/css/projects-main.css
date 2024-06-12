@@ -1,4 +1,10 @@
-
+.addOpacity{
+    animation: fadeIn 5s forwards;
+}
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
 .container{
     display: flex;
     align-items: center;
@@ -49,12 +55,12 @@ img{
     height: 50px;
     border-radius: 10px;
     font-size: 20px;
+    padding: 5px;
 }
 
 .go-back-button a {
     text-decoration: underline;
-    margin-right: 5px;
-    margin-left: 5px;
+    
 }
 
 

@@ -8,16 +8,16 @@ document.addEventListener("DOMContentLoaded", function() {
     */
    const div = document.querySelector('.container-main');
    const pic = document.querySelector('.pic');
-
-    function addOpacity(){
-        /*hey.classList.add('addOpacity');
+   
+   function addOpacity(){
+       /*hey.classList.add('addOpacity');
         name.classList.add('addOpacityName');
         pic.classList.add('addOpacityPic');
         about.classList.add('addOpacityAbout');
         studying.classList.add('addOpacityStudying');
         */
-        div.classList.add('addOpacity');
-        pic.classList.add('addShadowColor');
+       div.classList.add('addOpacity');
+       pic.classList.add('addShadowColor');
     }
 
     addOpacity();
