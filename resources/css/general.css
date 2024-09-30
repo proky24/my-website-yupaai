@@ -4,12 +4,13 @@
 }
 
 :root{
-    --background: #0f151b;
-    --button: #131d27;
+    --background: #15152c;/*0f151b*//*15152c*/
+    --button: #232349;/*131d27*/
 }
 
 body{
-    background-color: var(--background);
+    /*background-color: var(--background);*/
+    background-image: linear-gradient(to right, #4c2a85, #6b7fd7);/*4c2a85*//*6b7fd7*//*d7d6d6*/
     margin: 0;
     padding: 0;
 }

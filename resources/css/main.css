@@ -4,97 +4,80 @@ main{
     min-height: 100vh;
 }
 
-.container-main{
-    margin-top: 7vh;
-    flex: 1;
+button{
+    cursor: pointer;
 }
 
-.addOpacity{
-    animation: fadeIn 5s forwards;
+.containerNav{
+    display: flex;
+    height: 35vh;
+    padding: 24px;
 }
 
-.col1-main,
-.col2-main,
-.col3-main{
-    text-align: center;
+#aboutMeBtn,
+#projectsBtn{
+    font-size: 35px;
+    border-style: none;
 }
 
-.col1-main{
-    margin-bottom: 0;
+#aboutMeBtn{
+    width: 37.5%;
+    margin-right: 2.5%;
+    height: 100%;
+    color: white;
+    background-color: #7484cd;/*d5b9b2*/
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.col2-main{
-    margin-top: 15px;
-    margin-bottom: 25px;
-    display: block;
+#aboutMeBtn:hover{
+    transform: scale(1.03);
 }
 
-.col3-main{
-    margin-top: 0;
-    margin-bottom: 20px;
+#rectangles{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
 }
 
-
-.hey{
+#projectsBtn{
+    background-color: #97a3d8;/*56351e*//*a1abd7*/
+    width: 100%;
+    height: 47.5%;
+    margin-bottom: 2.5%;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
 }
 
-/*
-.addOpacity{
-    animation: fadeIn 2s forwards;
-}
-*/
-
-
-.name{
-    font-size: 60px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-/*
-.addOpacityName{
-    animation: fadeIn 4s forwards;
-}
-*/
-.cool{
-    text-decoration: underline;
-    animation: changeColor 10s infinite;
-    margin-right: 5px;
-    margin-left: 5px;
+#projectsBtn:hover{
+    transform: skew(-10deg);
 }
 
-
-.about{
-    margin-bottom: 5px;
-}
-/*
-.addOpacityAbout{
-    animation: fadeIn 10s forwards;
-}
-*/
-
-.studying{
-    font-size: 15px;
-    margin-top: 0px;
-}
-/*
-.addOpacityStudying{
-    animation: fadeIn 8s forwards;
-}
-*/
-.pic{
-    height: 50vh;
-    border-radius: 3%;
+#socials{
+    background-color: #9daae7;/*a26769*/
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    min-height: 48.5%;
+    max-width: 100%;
 }
 
-.addShadowColor{
-    animation: changeShadowColor 10s infinite;
+.logo{
+    width: 80px;
+    margin: 0;
+    padding: 0;
 }
 
-/*
-.addOpacityPic{
-    animation: fadeIn 6s forwards, changeShadowColor 10s infinite;
+.link-animation{
+    transition: scale 3s, rotate 1.5s;
 }
-*/
+
+.link-animation:hover{
+    scale: 1.2;
+    rotate: 360deg;
+}
 
 .about-me{
     display: flex;
@@ -104,55 +87,60 @@ main{
     opacity: 0;
 }
 
-.addSlideIn{
-    animation: slideIn 1.2s forwards;
-}
-
 .heading{
     /*background-color: #131d27;*/
-    padding: 6px;
-    width: 15vw;
+    font-size: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
 }
 
 .text{
     max-width: 800px;
     line-height: 35px;
     /*background-color: #131d27;*/
+    font-size: 22px;
     border-radius: 5px;
     padding: 12px;
 }
 
-@keyframes fadeIn{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
+/*
+.left{
+   align-items: right;
 }
 
-@keyframes changeShadowColor{
-    0% { box-shadow: 0 0 15px rgb(255, 0, 0); } 
-    16.666% { box-shadow: 0 0 15px rgb(255, 255, 0); } 
-    33.333% { box-shadow: 0 0 15px rgb(0, 255, 0); } 
-    50% { box-shadow: 0 0 15px rgb(0, 255, 255); } 
-    66.666% { box-shadow: 0 0 15px rgb(0, 0, 255); } 
-    83.333% { box-shadow: 0 0 15px rgb(255, 0, 255); } 
-    100% { box-shadow: 0 0 15px rgb(255, 0, 0); } 
+.col1-header{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes changeColor{
-    0% { color: rgb(255, 0, 0); } 
-    16.666% { color: rgb(255, 255, 0); } 
-    33.333% { color: rgb(0, 255, 0); } 
-    50% { color: rgb(0, 255, 255); } 
-    66.666% { color: rgb(0, 0, 255); } 
-    83.333% { color: rgb(255, 0, 255); } 
-    100% { color: rgb(255, 0, 0); } 
+.col2-header{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #131d27;
 }
 
-@keyframes slideIn{
-    0%{transform: translateX(-400px);}
-    100%{transform: translateX(0px);}
+.troll{
+    width: 50%;
+    height: 100%;
+    border-right: 3px solid black;
 }
+
+.projects{
+    width: 50%;
+    height: 100%;
+    background-color: #131d27;
+    text-align: center;
+    align-items: center;
+}
+
+.text-in-buttons{
+    font-family: 'Expletus Sans';
+    font-size: 35px;
+}*/

@@ -4,3 +4,14 @@
     font-size: 50px;
     cursor: auto;
 }
+
+.menu{
+    text-align: center;
+    font-size: 30px;
+    padding: 12px;
+    /*background-color: #232349;*/
+    border-bottom: 2px solid #a1abd7;
+}
+.menu h1{
+    margin: 0;
+}

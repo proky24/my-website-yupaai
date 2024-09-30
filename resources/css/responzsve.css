@@ -1,19 +1,15 @@
 @media (min-width: 150px) and (max-width: 549px) {
-    .text-in-buttons{
-        font-size: 15px;
-    }
-
-    .container-header{
+    .containerNav{
         height: 10svh;
     }
 
-    .col1-header{
-        width:75%;
+    #aboutMeBtn,
+    #projectsBtn{
+        font-size: 20px;
     }
 
-    .col2-header{
-        width: 25%;
-        gap: 5px;
+    #socials{
+        gap: 25px;
     }
 
     .col3-main{
@@ -21,38 +17,22 @@
     }
 
     .logo{
-        width: 20px;
+        width: 25px;
     }
 
 
     .heading{
-        width: 30vw;
-        padding: 12px;
+        font-size: 25px;
     }
 
     .text{
         max-width: 300px;
     }
+    
 
 }
 
 @media (min-width: 550px) and (max-width: 999px) {
-    .text-in-buttons{
-        font-size: 25px;
-    }
-
-    .col1-header{
-        width: 75%;
-    }
-
-    .col2-header{
-        width: 25%;
-        gap: 10px;
-    }
-
-    .logo{
-        width: 40px;
-    }
 
     .heading{
         width: 30vw;
@@ -63,9 +43,5 @@
         max-width: 600px;
         margin-right: 12px;
         margin-left: 12px;
-    }
-
-    .projects{
-        padding-right: 4px;
     }
 }

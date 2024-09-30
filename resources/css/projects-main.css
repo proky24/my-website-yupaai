@@ -1,17 +1,106 @@
-.addOpacity{
+.containerAll{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 65vw;
+    gap: 36px;
+    padding: 12px;
+}
+
+.projectContainer{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 15vw;
+    /*background-color: #f2f7f2;/*f9f5ff*//*97a3d8*/
+    background-color: #97a3d8;
+    border-radius: 12px;
+    border: 3px solid #97a3d8;
+    opacity: 0;
+    transition: scale 0.5s;
+}
+
+.projectContainer:hover{
+    scale: 1.05;
+}
+
+.example{
+    margin: 0;
+    width: 160px;
+}
+
+#backBtn{
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+h4{
+    margin: 0;
+    font-size: 24px;
+    text-decoration: underline;
+}   
+
+p{
+    font-size: 20px;
+}
+
+p,
+h4,
+a{
+    color: white;
+}
+
+a{
+    position: relative;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+@keyframes underline {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        transform: scale(0.6);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.addFadeIn{
+    animation: fadeIn 1s forwards;
+}
+
+/*.addOpacity{
     animation: fadeIn 5s forwards;
 }
 @keyframes fadeIn{
     0%{opacity: 0;}
     100%{opacity: 1;}
 }
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    padding: 12px;
-}
+
 
 img{
     width: 12rem;
@@ -75,10 +164,10 @@ img{
 }
 
 @keyframes changeBorderColor {
-    0% { border: 2px solid rgba(142, 218, 232, 0.5); } /* Light Cyan: #8EDA */
-    20% { border: 2px solid rgba(78, 186, 204, 0.5); } /* Cyan */
-    40% { border: 2px solid rgba(47, 147, 166, 0.5); } /* Cyan */
-    60% { border: 2px solid rgba(24, 94, 104, 0.5); } /* Dark Cyan */
-    80% { border: 2px solid rgba(47, 147, 166, 0.5); } /* Cyan */
-    100% { border: 2px solid rgba(142, 218, 232, 0.5); } /* Light Cyan */
-}
+    0% { border: 2px solid rgba(142, 218, 232, 0.5); } /* Light Cyan: #8EDA 
+    20% { border: 2px solid rgba(78, 186, 204, 0.5); } /* Cyan 
+    40% { border: 2px solid rgba(47, 147, 166, 0.5); } /* Cyan 
+    60% { border: 2px solid rgba(24, 94, 104, 0.5); } /* Dark Cyan 
+    80% { border: 2px solid rgba(47, 147, 166, 0.5); } /* Cyan 
+    100% { border: 2px solid rgba(142, 218, 232, 0.5); } /* Light Cyan 
+}*/

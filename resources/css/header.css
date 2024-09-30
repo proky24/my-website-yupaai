@@ -1,59 +1,156 @@
 
-.logo{
-    width: 45px;
-    margin: 0;
-    padding: 0;
+.container-main{
+    margin-top: 7vh;
+    margin-bottom: 14vh;
+    flex: 1;
 }
 
-.container-header{
-    display: flex;
-    height: 10vh;
+.addOpacity{
+    animation: fadeIn 2s forwards;
 }
 
-.left{
-   align-items: right;
-}
-
-.col1-header{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.col2-header{
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    background-color: #131d27;
-}
-
-.troll{
-    width: 50%;
-    height: 100%;
-    border-right: 3px solid black;
-}
-
-.projects{
-    width: 50%;
-    height: 100%;
-    background-color: #131d27;
+.col1-main,
+.col2-main,
+.col3-main{
     text-align: center;
-    align-items: center;
 }
 
-.text-in-buttons{
-    font-family: 'Expletus Sans';
-    font-size: 35px;
+.col1-main{
+    margin-bottom: 0;
 }
 
-.link-animation{
-    transition: scale 3s, rotate 1.5s;
+.col2-main{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    display: block;
 }
 
-.link-animation:hover{
-    scale: 1.2;
-    rotate: 360deg;
+.col3-main{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+.hey{
+    font-size: 42px;
+}
+
+/*
+.addOpacity{
+    animation: fadeIn 2s forwards;
+}
+*/
+
+
+.name{
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/*
+.addOpacityName{
+    animation: fadeIn 4s forwards;
+}
+*/
+.cool{
+    text-decoration: underline;
+    animation: changeColor 10s infinite;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+.about{
+    margin-bottom: 5px;
+}
+/*
+.addOpacityAbout{
+    animation: fadeIn 10s forwards;
+}
+*/
+
+.studying{
+    font-size: 15px;
+    margin-top: 0px;
+}
+/*
+.addOpacityStudying{
+    animation: fadeIn 8s forwards;
+}
+*/
+.pic{
+    height: 50vh;
+    border-radius: 3%;
+}
+
+.addShadowColor{
+    animation: changeShadowColor 10s infinite;
+}
+
+/*
+.addOpacityPic{
+    animation: fadeIn 6s forwards, changeShadowColor 10s infinite;
+}
+*/
+
+
+.addSlideIn{
+    animation: slideIn 1.2s forwards;
+}
+
+.addSlideOut{
+    animation: slideOut 1.2s forwards;
+}
+
+.addSlideDown{
+    animation: slideDown 1.2s forwards;
+}
+
+.addSlideTop{
+    animation: slideTop 1.2s forwards;
+}
+
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes changeShadowColor{
+    0% { box-shadow: 0 0 15px rgb(255, 0, 0); } 
+    16.666% { box-shadow: 0 0 15px rgb(255, 255, 0); } 
+    33.333% { box-shadow: 0 0 15px rgb(0, 255, 0); } 
+    50% { box-shadow: 0 0 15px rgb(0, 255, 255); } 
+    66.666% { box-shadow: 0 0 15px rgb(0, 0, 255); } 
+    83.333% { box-shadow: 0 0 15px rgb(255, 0, 255); } 
+    100% { box-shadow: 0 0 15px rgb(255, 0, 0); } 
+}
+
+@keyframes changeColor{
+    0% { color: rgb(255, 0, 0); } 
+    16.666% { color: rgb(255, 255, 0); } 
+    33.333% { color: rgb(0, 255, 0); } 
+    50% { color: rgb(0, 255, 255); } 
+    66.666% { color: rgb(0, 0, 255); } 
+    83.333% { color: rgb(255, 0, 255); } 
+    100% { color: rgb(255, 0, 0); } 
+}
+
+@keyframes slideIn{
+    0%{transform: translateX(-400px);}
+    100%{transform: translateX(0px);}
+}
+
+@keyframes slideOut{
+    0%{transform: translateX(200px);}
+    100%{transform: translateX(0px);}
+}
+
+@keyframes slideDown{
+    0%{transform: translateY(-50px);}
+    100%{transform: translateY(0px);}
+}
+
+@keyframes slideTop{
+    0%{transform: translateY(200px);}
+    100%{transform: translateY(0px);}
 }
