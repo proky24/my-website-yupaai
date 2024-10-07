@@ -52,6 +52,7 @@ a{
 
 a{
     position: relative;
+    font-weight: bolder; 
 }
 
 a::after {
@@ -61,7 +62,7 @@ a::after {
     height: 2px;
     bottom: -1px;
     left: 0;
-    background-color: white;
+    background-color: #6c7fd2;
     transition: width 0.3s ease-in-out;
 }
 
