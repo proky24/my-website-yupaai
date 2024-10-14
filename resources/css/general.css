@@ -10,7 +10,7 @@
 
 body{
     /*background-color: var(--background);*/
-    background-image: linear-gradient(to right, #4c2a85, #6b7fd7);/*4c2a85*//*6b7fd7*//*d7d6d6*/
+    background-image: linear-gradient(to right, #4c2a85, #6b7fd7);/*4c2a85*//*6b7fd7*/
     margin: 0;
     padding: 0;
 }
