@@ -1,3 +1,4 @@
+const body = document.getElementById('body');
 const socials = document.getElementById('socials');
 const projectsBtn = document.getElementById('projectsBtn');
 projectsBtn.addEventListener('click', () => {
@@ -126,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const hours = time.getHours();
     
     if(hours >= 19){
-        document.body.style.backgroundImage = 'linear-gradient(to right, #2a1a4c, #2d3f71);';
+        body.style.backgroundImage = "linear-gradient(to right, #2a1a4c, #2d3f71)";
         aboutBtn.style.backgroundColor = '#2d3f71';
         projectsBtn.style.backgroundColor = '#344696';
         socials.style.backgroundColor = '#384685';

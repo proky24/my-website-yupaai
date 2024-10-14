@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const hours = time.getHours();
     
     if(hours >= 19){
-        document.body.style.backgroundImage = 'linear-gradient(to right, #2a1a4c, #2d3f71);';
+        document.body.style.backgroundImage = 'linear-gradient(to right, #2a1a4c, #2d3f71)';
         projectContainer.forEach((projectContainer) => {
             projectContainer.style.backgroundColor = '#2d3f71';
         });
