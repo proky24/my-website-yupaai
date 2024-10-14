@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.style.backgroundImage = 'linear-gradient(to right, #2a1a4c, #2d3f71)';
         projectContainer.forEach((projectContainer) => {
             projectContainer.style.backgroundColor = '#2d3f71';
+            projectContainer.style.border = '3px solid #5462a0'
         });
     }
 });
