@@ -1,3 +1,3 @@
-my personal huge (my fav project so far)
+my personal webpage
 
 --> https://proky.vercel.app
