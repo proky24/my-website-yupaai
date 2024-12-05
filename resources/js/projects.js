@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     addClass();
 });
+let time;
+let hours;  
 
 const backBtn = document.getElementById('backBtn');
 
@@ -44,8 +46,8 @@ link = (number) => {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    const time = new Date();
-    const hours = time.getHours();
+    time = new Date();
+    hours = time.getHours();
     
     if(hours >= 19 || hours <= 8){
         document.body.style.backgroundImage = 'linear-gradient(to right, #2a1a4c, #2d3f71)';
@@ -54,4 +56,6 @@ document.addEventListener("DOMContentLoaded", function() {
             projectContainer.style.border = '3px solid #5462a0'
         });
     }
+
+    console.log(hours);
 });

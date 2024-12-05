@@ -1,4 +1,6 @@
 const body = document.getElementById('body');
+let time;
+let hours;
 const socials = document.getElementById('socials');
 const projectsBtn = document.getElementById('projectsBtn');
 projectsBtn.addEventListener('click', () => {
@@ -123,8 +125,8 @@ function scrollDown(){
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    const time = new Date();
-    const hours = time.getHours();
+     time = new Date();
+     hours = time.getHours();
     
     if(hours >= 19 || hours <= 8){
         body.style.backgroundImage = "linear-gradient(to right, #2a1a4c, #2d3f71)";
@@ -132,4 +134,6 @@ document.addEventListener("DOMContentLoaded", function() {
         projectsBtn.style.backgroundColor = '#344696';
         socials.style.backgroundColor = '#384685';
     }
+
+    console.log(hours);
 });
