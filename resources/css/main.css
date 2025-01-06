@@ -12,6 +12,7 @@ button{
     display: flex;
     height: 35vh;
     padding: 24px;
+    margin-bottom: 18vh;
 }
 
 #aboutMeBtn,
@@ -85,6 +86,7 @@ button{
     align-items: center;
     justify-content: center;
     opacity: 0;
+    margin-bottom: 18vh;
 }
 
 .heading{
@@ -103,6 +105,22 @@ button{
     font-size: 22px;
     border-radius: 5px;
     padding: 12px;
+}
+
+.addFadeIn{
+    animation: FADEIN 2s forwards;
+}
+
+
+@keyframes FADEIN{
+    0%{
+        transform: scale(0.6);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 /*

@@ -1,6 +1,8 @@
 const body = document.getElementById('body');
 let time;
 let hours;
+let observed = false;   
+let observedAb = false; 
 const socials = document.getElementById('socials');
 const projectsBtn = document.getElementById('projectsBtn');
 projectsBtn.addEventListener('click', () => {
@@ -11,16 +13,18 @@ const aboutBtn = document.getElementById('aboutMeBtn');
 
 let observer1 = new IntersectionObserver((entries, observer1) => {
     entries.forEach(entry => {
-        if(entry.isIntersecting){
-            requestAnimationFrame(() => {
-                entry.target.style.opacity = '1';
-                entry.target.classList.add('addSlideDown');
-                setTimeout(() => {
-                    entry.target.classList.remove('addSlideDown');
-                }, 1500);
-            })
-        }else{
-            entry.target.style.opacity = '0';
+        if(observed){return;}
+        else{
+            if(entry.isIntersecting){
+                requestAnimationFrame(() => {
+                    entry.target.style.opacity = '1';
+                    entry.target.classList.add('addSlideDown');
+                        setTimeout(() => {
+                            entry.target.classList.remove('addSlideDown');
+                            observed = true;
+                        }, 1202);   
+                })
+            }
         }
     });
 });
@@ -29,16 +33,17 @@ observer1.observe(aboutBtn);
 
 let observer2 = new IntersectionObserver((entries, observer2) => {
     entries.forEach(entry => {
-        if(entry.isIntersecting){
-            requestAnimationFrame(() => {
-                entry.target.style.opacity = '1';
-                entry.target.classList.add('addSlideTop');
-                setTimeout(() => {
-                    entry.target.classList.remove('addSlideTop');
-                }, 1500);
-            })
-        }else{
-            entry.target.style.opacity = '0';
+        if(observed){return;}
+        else{
+            if(entry.isIntersecting){
+                requestAnimationFrame(() => {
+                    entry.target.style.opacity = '1';
+                    entry.target.classList.add('addSlideTop');
+                    setTimeout(() => {
+                        entry.target.classList.remove('addSlideTop');
+                    }, 1202);
+                })
+            }
         }
     });
 });
@@ -48,16 +53,17 @@ observer2.observe(projectsBtn);
 
 let observer3 = new IntersectionObserver((entries, observer3) => {
     entries.forEach(entry => {
-        if(entry.isIntersecting){
-            requestAnimationFrame(() => {
-                entry.target.style.opacity = '1';
-                entry.target.classList.add('addSlideTop');
-                setTimeout(() => {
-                    entry.target.classList.remove('addSlideTop');
-                }, 1500);
-            })
-        }else{
-            entry.target.style.opacity = '0';
+        if(observed){return;}
+        else{
+            if(entry.isIntersecting){
+                requestAnimationFrame(() => {
+                    entry.target.style.opacity = '1';
+                    entry.target.classList.add('addSlideTop');
+                    setTimeout(() => {
+                        entry.target.classList.remove('addSlideTop');
+                    }, 1202);       
+                })
+            }
         }
     });
 });
@@ -69,20 +75,20 @@ const aboutMe = document.querySelector('.about-me');
     // Define the Intersection Observer
     let observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
-            // If the element is in the viewport, add the animation class
-            if(entry.isIntersecting) {
-                requestAnimationFrame(() => {
-                    entry.target.style.opacity = '1';
-                    entry.target.classList.add('addSlideIn');
-                    setTimeout(() => {
-                        entry.target.classList.remove('addSlideIn');
-                        /*entry.target.style.marginBottom = '12px';
-                        entry.target.style.marginTop = '400px';*/
-                    }, 1500);
-                })
-            }else{
-                entry.target.style.opacity = '0';
+            if(observedAb){return;}
+            else{
+                if(entry.isIntersecting) {
+                    requestAnimationFrame(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.classList.add('addFadeIn');
+                        setTimeout(() => {
+                            entry.target.classList.remove('addFadeIn');
+                            observedAb = true;
+                        }, 2002);       
+                    })
+                }
             }
+            // If the element is in the viewport, add the animation class
         });
     }, {threshold: 0.6}); // Adjust the threshold according to your needs
 
@@ -115,13 +121,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
 
 function scrollDown(){
-    aboutMe.style.opacity = '1';
-    aboutMe.classList.add('addSlideIn');
     aboutMe.scrollIntoView({behavior: "smooth"});
-    setTimeout(() => {
-        /*aboutMe.classList.remove('addSlideIn');
-        /*aboutMe.style.marginTop = '12px';*/
-    }, 1500);
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -135,5 +135,4 @@ document.addEventListener("DOMContentLoaded", function() {
         socials.style.backgroundColor = '#384685';
     }
 
-    console.log(hours);
 });
