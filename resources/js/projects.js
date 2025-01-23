@@ -31,6 +31,7 @@ const projectContainer = document.querySelectorAll('.projectContainer');
 
 const linksArray = [
     "",
+    "https://proky24.github.io/Slots-/",
     "https://proky24.github.io/MathdleJS/",
     "https://proky24.github.io/BlockBusters/",
     "https://meme-pexeso.vercel.app",
